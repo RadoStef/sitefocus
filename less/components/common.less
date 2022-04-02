@@ -1,0 +1,60 @@
+@import 'var.less';
+
+html {
+    max-width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    background-color: @color-border;
+
+    a {
+        font-family: sans-serif;
+    }
+
+    h2 {
+        font-size: 26px;
+        padding: 70px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        // font-weight: 300;
+        margin: 0;
+        color: @color-white;
+        line-height: 1.8;
+
+        @media screen and (min-width: @tablet) {
+            padding: 100px 20px;
+        }
+    }
+
+    h1 {
+        width: 90%;
+        color: @color-white;
+        font-size: 20px;
+        padding: 30px 10px;
+        text-align: center;
+        border-top: 1px solid @color-h1;
+        border-bottom: 1px solid @color-h1;
+        position: absolute;
+        top: 480px;
+        background-color: rgba(26, 21, 21, 0.808);
+        margin-left: 3%;
+        font-family: 'Comfortaa', cursive;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+        &:hover {
+            background-color: white;
+            color: @color-black;
+            transition: all 1s;
+        }
+
+        @media screen and (min-width: @tablet) {
+            font-size: 22px;
+            margin-left: 4%;
+        }
+    }
+}

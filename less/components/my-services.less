@@ -1,0 +1,94 @@
+@import 'var.less';
+
+// the real services section
+
+h2 {
+    background: linear-gradient(to right, #CEA054 0%, #975100 100%);
+    &:hover {
+        background: linear-gradient(to left, #CEA054 0%, #975100 100%);
+        transition: all 2.5s;
+    }
+}
+
+.services-wrapper {
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1577538925651-bc188bf1bc14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto;
+
+    @media screen and (min-width: @tablet) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    @media screen and (min-width: @desktop) {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    h3 {
+        margin: auto;
+        text-transform: uppercase;
+        color: @color-border;
+        padding: 30px 0;
+    }
+
+
+    .service {
+        width: 90%;
+        text-align: center;
+        background-color: @color-white;
+        margin: 70px auto 40px auto;
+        box-shadow: 0px 8px 9px 0px rgba(0,0,0,0.12);
+        border-radius: 4px;
+
+        span {
+            padding-top: 20px;
+            color: @color-border;
+        }
+
+        img {
+            width: 100%;
+            height: 92%;
+            opacity: 0.2;
+            border-radius: 4px;
+
+            &:hover {
+                opacity: 1;
+                transition: all .5s;
+            }
+        }
+
+        i {
+            font-size: 40px;
+            background: linear-gradient(to right, #CEA054 0%, #975100 100%);
+            color: @color-white;
+            padding: 15px;
+            border-radius: 50%;
+            border: 2px solid @color-white;
+            margin: 30px 0 10px 0;
+            &:hover {
+                background: linear-gradient(to left, #CEA054 0%, #975100 100%);
+            }
+        }
+
+        h3 {
+            color: @color-border;
+            font-weight: 200;
+            margin: 0 15px;
+            line-height: 1.5;
+        }
+
+        p {
+            text-align: left;
+            margin: 20px;
+            padding-bottom: 5px;
+            line-height: 1.3;
+        }
+
+    }
+
+}
